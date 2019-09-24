@@ -35,10 +35,10 @@
   </head>
   <body onload="document.forms[0].word.focus()">
 
-    <!-- submit a short mnemonic word here... -->
+    <!-- Submit a short mnemonic word here... -->
     <form method="post" action="#" target="pass">
       <div style="display:none">
-        <!-- prevent web browsers from storing passwords -->
+        <!-- ( prevent browsers from storing passwords ) -->
         <input type="password" name="unused" tabindex="-1"/>
       </div>
       <input type="password" value="" name="word">
@@ -56,7 +56,7 @@
     </iframe>
 
     <script>
-      document.getElementById('pass').src = 'blank.html';
+      document.getElementById('pass').src = 'blank.html'; // cached
 
       function reload() {
         copy(window.null);
