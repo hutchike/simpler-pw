@@ -24,12 +24,12 @@ You will now see your generated password. Simple! (Finally, click on "Clear")
 
 ## Author
 
-kevin@legendum.co.uk
+kevin.hutchinson@gmail.com
 
 
 ## License
 
-Copyright (C) 2019 by Kevin Hutchinson <kevin@legendum.co.uk>
+Copyright (C) 2019 by Kevin Hutchinson <kevin.hutchinson@gmail.com>
 
 Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted.
 
