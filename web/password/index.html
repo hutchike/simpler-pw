@@ -59,7 +59,7 @@
       document.getElementById('pass').src = 'blank.html'; // cached
 
       function reload() {
-        copy(window.null);
+        if (window.copied) copy(window.null);
         location.reload();
       }
 
@@ -79,6 +79,7 @@
           console.warn("Could not select text: Unsupported browser");
         }
         doc.execCommand('copy');
+        window.copied = true;
       }
     </script>
 
