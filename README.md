@@ -8,7 +8,7 @@ Objective: simpler password management
 
 1. Visit https://simpler.pw/password
 2. Login with any username, and your chosen *master password*
-3. Enter any word, then click "OK" to have it encrypted with your password
+3. Enter any word, then click "OK" to have it encrypted with your *master password*
 
 You will now see your generated password. Simple! (Finally, click on "Clear")
 
