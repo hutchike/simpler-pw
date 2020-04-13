@@ -1,4 +1,4 @@
-Simpler.pw
+simpler.pw
 ==========
 
 Objective: simpler password management
