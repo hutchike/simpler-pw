@@ -59,8 +59,8 @@
       document.getElementById('pass').src = 'blank.html'; // cached
 
       function format() {
-        var body = window.frames['pass'].document.body;
-        var password = body.innerText;
+        let body = window.frames['pass'].document.body;
+        let password = body.innerText;
         body.innerHTML = '<div style="font-family:Consolas, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace; font-size: 24px">' + password + '</div>';
       }
 
@@ -70,14 +70,14 @@
       }
 
       function copy(win) {
-        var doc = win.document;
+        let doc = win.document;
         if (doc.body.createTextRange) {
-          var range = doc.body.createTextRange();
+          let range = doc.body.createTextRange();
           range.moveToElementText(doc.body);
           range.select();
         } else if (win.getSelection) {
-          var selection = win.getSelection();
-          var range = doc.createRange();
+          let selection = win.getSelection();
+          let range = doc.createRange();
           range.selectNodeContents(doc.body);
           selection.removeAllRanges();
           selection.addRange(range);
@@ -86,6 +86,16 @@
         }
         doc.execCommand('copy');
         window.copied = true;
+      }
+
+      // Read URL hash as password
+      window.onload = function() {
+        let form = document.forms[0];
+        let word = location.hash.substr(1);
+        if (word) {
+          form.word.value = word;
+          form.submit.click();
+        }
       }
     </script>
 
